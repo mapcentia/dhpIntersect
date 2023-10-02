@@ -196,7 +196,7 @@ class IntersectLayer extends React.Component{
             <React.Fragment>
                 <label style={{marginRight: "10px", width: "100%"}} htmlFor={"layer"+this.props.index} className="hide-print">
                     {/* <input type="checkbox" name={"layer"+this.props.index} value="enabled" checked={this.state.enabled} onChange={this.onChange}/> */}
-                    <button className="btn btn-default btn-raised btn-xs pull-right" alt="Vis/Skjul overlap" onClick={this.toggleLayer}><i className="fa fa-eye"></i> Juster synlighed </button>
+                    <button className="btn btn-default btn-raised btn-xs pull-right" alt="Vis/Skjul overlap" onClick={this.toggleLayer}><i className="fa fa-eye"></i> Vis/Skjul </button>
                     <ColorPicker color={this.state.color} changeColor={this.changeColor} changeAlpha={this.changeAlpha}/>
                 </label>
             </React.Fragment>
