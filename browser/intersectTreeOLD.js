@@ -335,8 +335,8 @@ class IntersectionTree extends React.Component{
         let totalCount = 0;
         let enabledCount = 0;
         let renderData = (<div>Ingen data fundet</div>);
-        let consumptionTable = (<div>Ingen forbrugs data fundet</div>);
-        let socioeconomicTable= (<div>Ingen socioøkonomisk data fundet</div>);
+        let consumptionTable = (<div>Ingen forbrugsdata fundet</div>);
+        let socioeconomicTable= (<div>Ingen socioøkonomiskdata fundet</div>);
 
         if(this.state.polygons != null && this.state.polygons.length > 0){
             renderData = this.state.polygons.map((e, i) => {
