@@ -158,12 +158,12 @@ class IntersectionTree extends React.Component{
                 let socioeconomySum = elem.economyData;
                 //static data
                 let houseInSum = {
-                    ant_hus_indk1_: 0,
-                    ant_hus_indk2_: 0,
-                    ant_hus_indk3_: 0,
-                    ant_hus_indk4_: 0,
-                    ant_hus_indk5_: 0,
-                    ant_hus_indk9_: 0,
+                    ant_hus_indk1: 0,
+                    ant_hus_indk2: 0,
+                    ant_hus_indk3: 0,
+                    ant_hus_indk4: 0,
+                    ant_hus_indk5: 0,
+                    ant_hus_indk9: 0,
                 }
                 //assign true values from socioeconomy to static data;
                 Object.keys(houseInSum).forEach((key) => {
@@ -173,7 +173,7 @@ class IntersectionTree extends React.Component{
                 let householdData = null;
                 
                 if(Object.keys(socioeconomySum).length > 0 && socioeconomySum.husinksum > 0){
-                    let difference = (socioeconomySum.hussum - socioeconomySum.husinksum) + socioeconomySum.ant_hus_indk9_;
+                    let difference = (socioeconomySum.hussum - socioeconomySum.husinksum) + socioeconomySum.ant_hus_indk9;
                     let difference_percentage =  parseFloat(((difference / socioeconomySum.hussum)* 100).toFixed(1));
 
                     householdData = {
