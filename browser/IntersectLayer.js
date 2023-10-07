@@ -61,7 +61,7 @@ class ColorPicker extends React.Component{
         )
 
         return <div style={{float:"right"}}>
-            <button className="btn btn-default btn-raised btn-xs float-right" alt="Vælg farve og gennemsigtighed" onClick={this.handeClick}><i className="fa fa-palette "></i> Juster farve og <br/> gennemsigtighed</button>
+            <button className="btn btn-default btn-raised btn-xs float-right" alt="Vælg farve og gennemsigtighed" onClick={this.handeClick}><i className="fa fa-palette "></i> Juster farve og gennemsigtighed</button>
             {this.state.displayColorPicker ? colorPickerContainer: ''}
         </div>
     }
